@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact</title>
+  </head>
+  <body bgcolor="beige">
+    <h1 style="color: darkolivegreen">Contact</h1>
+    <form method="post">
+      {% csrf_token %} {{ form.as_p }}
+
+      <button
+        type="submit"
+        ,
+        style="background-color: greenyellow; border-radius: 6px"
+      >
+        Submit
+      </button>
+      <button
+        type="reset"
+        ,
+        style="background-color: tomato; border-radius: 6px"
+      >
+        Reset
+      </button>
+    </form>
+  </body>
+</html>
