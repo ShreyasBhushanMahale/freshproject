@@ -3,7 +3,7 @@
   <head>
     <title>Contact</title>
   </head>
-  <body bgcolor="beige">
+  <body style="color: blanchedalmond">
     <h1 style="color: darkolivegreen">Contact</h1>
     <form method="post">
       {% csrf_token %} {{ form.as_p }}
@@ -11,16 +11,16 @@
       <button
         type="submit"
         ,
-        style="background-color: greenyellow; border-radius: 6px"
+        style="background-color: chartreuse; border-radius: 8px"
       >
         Submit Selection
       </button>
       <button
         type="reset"
         ,
-        style="background-color: tomato; border-radius: 6px"
+        style="background-color: darkorange; border-radius: 8px"
       >
-        Reset Selection
+        Clear Selection
       </button>
     </form>
   </body>

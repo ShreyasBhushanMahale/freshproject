@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from .forms import ContactForm
-from .models import (
-    Contact,
-)  # import the Contact model, the name should be the same as the class name in models.py!!!
+from .models import Contact
+
+# import the Contact model, the name should be the same as the class name in models.py!!!
 
 # Create your views here.
 
