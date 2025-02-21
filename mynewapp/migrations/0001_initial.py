@@ -7,18 +7,25 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Contact',
+            name="Contact",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=100)),
-                ('age', models.IntegerField()),
-                ('email', models.EmailField(max_length=100)),
-                ('message', models.TextField()),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),  # If the comma was absent, it would be treated as end of the statement
+                ),
+                ("name", models.CharField(max_length=100)),
+                ("age", models.IntegerField()),
+                ("email", models.EmailField(max_length=100)),
+                ("message", models.TextField()),
             ],
         ),
     ]
